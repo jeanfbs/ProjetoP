@@ -6,4 +6,7 @@ $(document).ready(function () {
   $("div.panel-heading").on("click",function(){
   		$(this).parent("div").children(".panel-body").toggle(200);
   });
+
+
+  $("a[data-toggle=tooltip]").tooltip();
 });
