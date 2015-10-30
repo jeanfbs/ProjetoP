@@ -14,6 +14,8 @@
 
     <!-- Bootstrap core CSS -->
      {{HTML::style('css/bootstrap.min.css')}}
+    <!-- Import Font Awesome -->
+    {{HTML::style('css/font-awesome.min.css')}}
     <!-- Custom styles for this template -->
     {{HTML::style('css/offcanvas.css')}}
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,33 +26,76 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+  	<div class="verde"></div>
+  	<div class="amarelo"></div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+
+  <div class="container-fluid">
+  	<!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Portal XYZ</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
           </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav><!-- /.navbar -->
 
     <div class="container">
 
       <div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
+      	<div class="col-xs-2 col-sm-2 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+        <div class="col-xs-8 col-sm-8" >
+       	  <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
           <div class="jumbotron">
@@ -91,19 +136,49 @@
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->
 
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-          </div>
+        <div class="col-xs-2 col-sm-2 sidebar-offcanvas" id="sidebar2">
+          	<div class="alert alert-warning" role="alert">Abertas Inscrições de Processo Seletivos</div>
+          	<br>
+          	<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title pull-left">Noticias</h3>
+			    <i class="fa fa-compress pull-right"></i>
+			    <br>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+			<div class="panel panel-success">
+			  <div class="panel-heading">
+			    <h3 class="panel-title pull-left">Cursos</h3>
+			    <i class="fa fa-compress pull-right"></i>
+			    <br>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+			<div class="panel panel-warning">
+			  <div class="panel-heading">
+			    <h3 class="panel-title pull-left">Comunidade</h3>
+			    <i class="fa fa-compress pull-right"></i>
+			    <br>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
+			<div class="panel panel-danger">
+			  <div class="panel-heading">
+			    <h3 class="panel-title pull-left">Destaques</h3>
+			    <i class="fa fa-compress pull-right"></i>
+			    <br>
+			  </div>
+			  <div class="panel-body">
+			    Panel content
+			  </div>
+			</div>
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
 
