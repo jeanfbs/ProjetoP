@@ -28,71 +28,79 @@
   <body>
   	<div class="verde"></div>
   	<div class="amarelo"></div>
+
   <nav class="navbar navbar-default navbar-fixed-top">
 
   <div class="container-fluid">
   	<!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_top" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Portal XYZ</a>
+      <a class="navbar-brand" href="{{url('/')}}">
+        <span id="logo"><center>XYZ</center></span>
+
+        <span id="nome">Faculdade de Computação</span>
+        <br>
+        <span><center>MINISTÉRIO DA EDUCAÇÃO</center></span>
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse" id="menu_top">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="#"><img src="{{url('img/br.png')}}" alt="Bandeira do Brasil" /> Português</a></li> 
+        <li><a href="#"><img src="{{url('img/en.png')}}" alt="Bandeira dos Estados Unidos" /> English</a></li>
+        <li><a href="#"><img src="{{url('img/es.png')}}" alt="Bandeira da Espanha" /> Español</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
+      <div class="row">
+        <div class="col-md-9">
+          <ul class="nav navbar-nav navbar-right" id="redes">
+            <li><a href="#" ><i class="fa fa-facebook-square fa-3x"></i></a></li> 
+            <li><a href="#" ><i class="fa fa-twitter fa-3x"></i></a></li>
+            <li><a href="#" ><i class="fa fa-google-plus fa-3x"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3" id="pesquisar">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Busque no site...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><i class="fa fa-search fa-fw"></i></button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
   </div><!-- /.container-fluid -->
 </nav><!-- /.navbar -->
-
-    <div class="container">
-
+    <div class="menu">
+      <ul class="menu-list">
+        <li><a href="#" > Contatos</a> </li>
+        <li class="divider"></li>
+        <li><a href="#" > Contatos</a> </li>
+        <li><a href="#" > Contatos</a> </li>
+        <li><a href="#" > Contatos</a> </li>
+      </ul>
+    </div>
+    <div class="container" id="conteudo">
       <div class="row row-offcanvas row-offcanvas-right">
       	<div class="col-xs-2 col-sm-2 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
-            <a href="#" class="list-group-item active">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item active">Faculdade</a>
+            <a href="#" class="list-group-item">Ciencia da Computação</a>
+            <a href="#" class="list-group-item">Sistemas de Informação</a>
+            <a href="#" class="list-group-item">Pós-Graduação</a>
+            <a href="#" class="list-group-item"></a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
           </div>
+          
         </div><!--/.sidebar-offcanvas-->
         <div class="col-xs-8 col-sm-8" >
        	  <p class="pull-right visible-xs">
